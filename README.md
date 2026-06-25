@@ -458,15 +458,3 @@ src/uav_slam_sim/docs/orin_nano_edge_deployment.md
 - `livox_ros_driver2_real`，其 package 元数据声明为 MIT。
 
 重新分发时请保留第三方包自带的许可证文件。详情见 `THIRD_PARTY_NOTICE.md`。
-
-## 项目名称
-
-```text
-MID360 Reliable Mapper
-```
-
-推荐 GitHub 仓库名：
-
-```text
-mid360-reliable-mapper
-```
