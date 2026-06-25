@@ -1,0 +1,82 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Enabled: true
+      Name: Grid
+      Plane: XY
+      Cell Size: 1
+      Color: 90; 90; 90
+      Value: true
+    - Class: rviz_default_plugins/PointCloud2
+      Enabled: true
+      Name: Simple ICP Map
+      Topic:
+        Value: /simple_icp_map
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 2
+      Queue Size: 2
+      Style: Points
+      Size (Pixels): 2
+      Size (m): 0.04
+      Color Transformer: AxisColor
+      Axis: Z
+      Use Fixed Frame: true
+      Value: true
+    - Class: rviz_default_plugins/PointCloud2
+      Enabled: true
+      Name: Current Scan
+      Topic:
+        Value: /simple_icp_scan
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 2
+      Queue Size: 2
+      Style: Points
+      Size (Pixels): 3
+      Size (m): 0.06
+      Color: 255; 220; 60
+      Color Transformer: FlatColor
+      Use Fixed Frame: true
+      Value: true
+    - Class: rviz_default_plugins/Path
+      Enabled: true
+      Name: Simple ICP Path
+      Topic:
+        Value: /simple_icp_path
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 5
+      Line Style: Lines
+      Line Width: 0.05
+      Color: 25; 255; 0
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 8; 8; 8
+    Fixed Frame: camera_init
+    Frame Rate: 20
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+  Value: true
+Views:
+  Current:
+    Class: rviz_default_plugins/Orbit
+    Distance: 12
+    Focal Point:
+      X: 0
+      Y: 0
+      Z: 0
+    Pitch: 0.75
+    Yaw: 0.85
+  Saved: ~

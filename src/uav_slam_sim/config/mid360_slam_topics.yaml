@@ -1,0 +1,30 @@
+world:
+  name: mid360_slam_8x8
+  size_m: [8.0, 8.0, 3.0]
+
+uav:
+  model: iris_mid360_d435i
+  spawn_pose_xyz_rpy: [-3.0, -3.0, 0.195, 0.0, 0.0, 0.78539816339]
+
+mid360:
+  pointcloud_topic: /mid360/points
+  imu_topic: /mid360/imu
+  frame_id: mid360_link
+  range_m: [0.2, 20.0]
+  update_rate_hz: 10.0
+
+d435i:
+  color_topic: /d435i/color/image
+  depth_topic: /d435i/depth/image
+  camera_info_topic: /d435i/color/camera_info
+
+nominal_mapping_path:
+  takeoff_alt_m: 1.3
+  cruise_speed_mps: 0.4
+  waypoints_xyz:
+    - [-3.0, -3.0, 1.3]
+    - [3.0, -3.0, 1.3]
+    - [3.0, 3.0, 1.3]
+    - [-3.0, 3.0, 1.3]
+    - [-3.0, -3.0, 1.3]
+    - [0.0, 0.0, 1.3]
